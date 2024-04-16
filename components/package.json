@@ -1,0 +1,6 @@
+{
+  "name": "components",
+  "dependencies": {
+    "sanitize-html": "^2.13.0"
+  }
+}
