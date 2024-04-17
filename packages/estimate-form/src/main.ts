@@ -1,15 +1,8 @@
 import Slider from 'components/slider';
 import Uploader from 'components/uploader';
-
 import embedForm from './embed-form';
 
 import './style.scss';
-
-// first we embed the form
-embedForm();
-
-// then we adopt the form
-let intervalId: number;
 
 const addSlider = function () {
   const sliderField = document.getElementsByClassName(
@@ -44,6 +37,7 @@ const addUploader = function () {
   const uploader = new Uploader({
     input: uploaderInput,
     className: 'uploader',
+    id: 'upload_files',
   });
 
   uploaderInput.style.display = 'none';
@@ -53,19 +47,9 @@ const addUploader = function () {
   }
 };
 
-const checkForm = function () {
-  const form = document.querySelector('form');
-
-  if (form) {
-    addSlider();
-    addUploader();
-
-    clearInterval(intervalId);
-  }
+const adoptForm = () => {
+  addSlider();
+  addUploader();
 };
 
-window.addEventListener('DOMContentLoaded', () => {
-  intervalId = setInterval(() => {
-    checkForm();
-  }, 100);
-});
+embedForm(adoptForm);

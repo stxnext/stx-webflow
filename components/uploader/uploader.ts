@@ -2,7 +2,8 @@ import { build } from '../helpers';
 
 type ChangeCallback = (value: number, component: Uploader) => void;
 
-interface SliderOptions {
+interface UploaderOptions {
+  id?: string;
   className?: string;
   input?: HTMLInputElement;
 }
@@ -16,15 +17,20 @@ export default class Uploader extends HTMLElement {
   public onChange: ChangeCallback | undefined;
 
   constructor ({
+    id,
     className,
     input,
-  }: SliderOptions) {
+  }: UploaderOptions) {
     super();
 
     this.#input = input!;
 
     if (className) {
       this.className = className;
+    }
+
+    if (id) {
+      this.setAttribute('id', id);
     }
   }
 
@@ -66,23 +72,30 @@ export default class Uploader extends HTMLElement {
   }
 
   #handleFiles (newFiles: FileList | null) {
-    this.#files = [...newFiles || []];
+    this.#files = this.#files.concat([...newFiles || []]);
     this.#updateFileList();
   }
 
   #updateFileList () {
     this.#fileList.innerHTML = '';
     this.#files.forEach((file) => {
-      const item = build('li');
+      const item = build('li', {}, this.#fileList);
       const fileInfoContainer = build('div', { class: 'file-info' }, item);
 
-      const image = build('span', { class: 'file-image' }, fileInfoContainer);
-      image.classList.add('file-image');
+      build('span', { class: 'file-image' }, fileInfoContainer);
 
       const label = build('span', { class: 'file-name' }, fileInfoContainer);
       label.textContent = file.name;
 
-      this.#fileList.appendChild(item);
+      const removeButton = build('span', { class: 'remove-button' }, fileInfoContainer);
+      removeButton.addEventListener('click', () => {
+        this.#files = this.#files.filter((f) => f !== file);
+        this.#updateFileList();
+      });
     });
+  }
+
+  get files() {
+    return this.#files;
   }
 }

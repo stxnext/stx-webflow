@@ -1,10 +1,38 @@
 @import './variables.scss';
 
+#hire_us-form-container {
+  .legal-consent-container {
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: black;
+
+    a {
+      color: black;
+      font-weight: 600;
+    }
+  }
+}
+
 .hs-form {
   display: flex;
   flex-direction: column;
   gap: 24px;
   align-items: stretch;
+
+  fieldset {
+    width: 100%;
+    max-width: 100% !important;
+  }
+
+  select {
+    height: 52px;
+  }
+
+  input, textarea {
+    box-sizing: border-box;
+  }
 }
 
 .hs-form,
@@ -93,7 +121,7 @@ fieldset.form-columns-2 {
 }
 
 .hs-input.hs-fieldtype-textarea {
-  height: 141px;
+  height: 110px;
 }
 
 .inputs-list.multi-container {
@@ -104,6 +132,12 @@ fieldset.form-columns-2 {
   list-style-type: none;
   padding: 0;
   margin: 0;
+
+  .hs-form-checkbox {
+    label {
+      height: 28px;
+    }
+  }
 }
 
 .hs-form-checkbox-display {
@@ -124,9 +158,6 @@ fieldset.form-columns-2 {
   border: 1px solid #e6e6e6;
   border-radius: 24px;
   font-weight: 400;
-}
-
-.hs-form-checkbox {
 }
 
 .hs-form-checkbox .hs-input {
@@ -243,4 +274,8 @@ input[type='submit'] {
   text-decoration: none;
   font-style: normal;
   margin-inline: 4px;
+}
+
+.hs_recaptcha {
+  display: none;
 }

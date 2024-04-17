@@ -1,4 +1,4 @@
-import { build, sanitize } from '../helpers';
+import { build } from '../helpers';
 
 type ChangeCallback = (value: number, component: Slider) => void;
 
@@ -122,6 +122,6 @@ export default class Slider extends HTMLElement {
   }
 
   setLabel (value: string) {
-    this.#label.innerHTML = sanitize(value);
+    this.#label.innerHTML = value;
   }
 }
