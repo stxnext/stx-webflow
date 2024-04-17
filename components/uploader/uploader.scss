@@ -1,0 +1,31 @@
+stx-uploader {
+  display: flex;
+  flex-direction: column;
+
+  .drop-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 52px;
+    background-color: #E6E6E6;
+    border: 1px dashed #777777;
+    stroke-dashoffset: 2px;
+    border-radius: 52px;
+    cursor: pointer;
+  }
+  
+  .drop-box.dragging-over {
+    background-color: #777777;
+  }
+  
+  .drop-box .label {
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #333333;
+  }
+  
+}

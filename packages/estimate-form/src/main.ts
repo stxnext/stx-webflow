@@ -1,6 +1,14 @@
-import './style.scss';
 import Slider from 'components/slider';
+import Uploader from 'components/uploader';
 
+import embedForm from './embed-form';
+
+import './style.scss';
+
+// first we embed the form
+embedForm();
+
+// then we adopt the form
 let intervalId: number;
 
 const addSlider = function () {
@@ -27,11 +35,31 @@ const addSlider = function () {
   }
 };
 
+const addUploader = function () {
+  const uploaderField = document.getElementsByClassName('hs_upload_files')[0];
+  const uploaderInput = uploaderField?.querySelector(
+    'input[name="upload_files"',
+  ) as HTMLInputElement;
+
+  const uploader = new Uploader({
+    input: uploaderInput,
+    className: 'uploader',
+  });
+
+  uploaderInput.style.display = 'none';
+
+  if (uploaderInput) {
+    uploaderInput.after(uploader);
+  }
+};
+
 const checkForm = function () {
   const form = document.querySelector('form');
 
   if (form) {
     addSlider();
+    addUploader();
+
     clearInterval(intervalId);
   }
 };

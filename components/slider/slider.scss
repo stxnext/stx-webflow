@@ -28,10 +28,10 @@ stx-slider {
     border-radius: var(--slider-track-border-radius);
     border-width: var(--slider-track-border-width);
     border-color: var(--slider-track-border-color);
-    background-color: var(--slider-track-inactive-side-color);
+    background-color: var(--slider-track-inactive-path-color);
 
     .active-path {
-      background-color: var(--slider-track-active-side-color);
+      background-color: var(--slider-track-active-path-color);
       border-radius: var(--slider-track-border-radius);
       border-width: var(--slider-track-border-width);
       border-color: var(--slider-track-border-color);

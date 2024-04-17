@@ -8,6 +8,7 @@ export default defineConfig({
   server: { port: 3001 },
   plugins: [svgr(), cssInjectedByJsPlugin()],
   build: {
+    sourcemap: true,
     lib: {
       entry: resolve(__dirname, 'src/main.ts'),
       name: 'estimate-form',
