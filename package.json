@@ -23,7 +23,7 @@
     "vite": "^5.2.8"
   },
   "scripts": {
-    "lint": "eslint .",
+    "lint": "eslint . --fix",
     "format": "prettier --write ."
   }
 }
