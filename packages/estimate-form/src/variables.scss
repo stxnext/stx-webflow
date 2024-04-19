@@ -1,21 +1,47 @@
 :root {
+  --gray-50: #f6f6f6;
+  --gray-400: #777777;
+  --light-gray: #e6e6e6;
+  --darker-gray: #333333;
+
+  --color-black: #000000;
+  --color-white: #ffffff;
+  --color-brand: var(--stx-next, #00b2a9);
+  --color-field-border: #dadada;
+  --color-field-error: #dc2636;
+  --color-checkbox-mark: var(--darker-gray);
+
+  --color-field-border-disabled: var(--gray-50);
+  --color-field-label-disabled: var(--gray-400);
+  --color-field-placeholder: var(--gray-400);
+  --color-toggle: var(--darker-gray);
+  --color-toggle-border: var(--light-gray);
+  
   --slider-puller-size: 12px;
   --slider-track-height: 2px;
   --slider-puller-focus-border-width: 1px;
-  --slider-puller-focus-border-color: #333333;
+  --slider-puller-focus-border-color: var(--darker-gray);
   --slider-track-border-radius: 0px;
   --slider-track-border-width: 0px;
-  --slider-track-border-color: #ccc;
+  --slider-track-border-color: none;
   --slider-track-inactive-path-color: #d9d9d9;
-  --slider-track-active-path-color: #333333;
-  --slider-puller-background-color: #333333;
+  --slider-track-active-path-color: var(--darker-gray);
+  --slider-puller-background-color: var(--darker-gray);
   --slider-puller-shadow: none;
   --slider-puller-hover-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  --slider-marks-font-color: #777777;
+  --slider-marks-font-color: var(--gray-400);
   --slider-marks-font-size: 14px;
   --slider-marks-font-weight: 400;
   --slider-marks-font-family: Inter;
   --slider-marks-font-line-height: 20px;
   --slider-marks-margin-top: 8px;
   --slider-mark-container-width: 100px;
+
+  --uploader-drop-box-caption-font-size: 14px;
+  --uploader-drop-box-caption-font-weight: 400;
+  --uploader-drop-box-caption-font-family: Inter;
+  --uploader-drop-box-caption-font-line-height: 20px;
+  --uploader-drop-box-background-color: var(--light-gray);
+  --uploader-drop-box-border-color: var(--gray-400);
+  --uploader-drop-box-caption-color: var(--darker-gray);
 }
