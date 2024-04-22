@@ -46,7 +46,7 @@
     row-gap: 24px;
 
     .hs-form-field {
-      width: 100%;
+      width: 100% !important;
     }
   }
 
@@ -66,7 +66,6 @@
   }
 
   fieldset .input {
-    margin: 0;
     margin-right: 0 !important;
   }
 
