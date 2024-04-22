@@ -9,12 +9,15 @@
 
 #hire_us-form-container {
   .legal-consent-container {
-    @include inter-font;
-    color: var(--color-black);
-
-    a {
+    
+    p {
+      @include inter-font;
       color: var(--color-black);
-      font-weight: 600;
+
+      a {
+        color: var(--color-black);
+        font-weight: 600;
+      }
     }
   }
 }
@@ -30,12 +33,27 @@
   fieldset.form-columns-1,
   fieldset.form-columns-2 {
     display: flex;
-    flex-direction: row;
     width: 100%;
     max-width: none;
     
     &.form-columns-2 {
       column-gap: 40px;
+    }
+  }
+
+  fieldset.form-columns-2 {
+    flex-direction: column;
+    row-gap: 24px;
+
+    .hs-form-field {
+      width: 100%;
+    }
+  }
+
+  @media (min-width: 768px) {
+    fieldset.form-columns-2 {
+      flex-direction: row;
+      row-gap: 0px;
     }
   }
 
@@ -45,6 +63,11 @@
 
   input, textarea {
     box-sizing: border-box;
+  }
+
+  fieldset .input {
+    margin: 0;
+    margin-right: 0 !important;
   }
 
   .actions {
