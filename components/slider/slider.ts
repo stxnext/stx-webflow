@@ -55,6 +55,10 @@ export default class Slider extends HTMLElement {
   }
 
   connectedCallback () {
+    setTimeout(this.#render.bind(this), 100);
+  }
+
+  #render() {
     this.setAttribute('tabindex', '0');
 
     this.#label = build('div', { class: 'label' }, this);

@@ -15,6 +15,10 @@ export default async function embedForm (onFormReadyCallback) {
     onBeforeFormSubmit: (form: HTMLFormElement) => {
       const uploader = document.getElementById('upload_files') as Uploader;
       form.elements['upload_files'].value = uploader.files;
+
+      setTimeout(() => {
+        window.scrollY = 0;
+      });
     },
     onFormReady: (form: HTMLFormElement) => {
       let formElement = form;
@@ -22,9 +26,6 @@ export default async function embedForm (onFormReadyCallback) {
       if(form.jquery) {
         formElement = form[0] as HTMLFormElement;
       }
-      
-      const container = document.getElementById('hire_us-form-container');
-      container?.appendChild(formElement);
 
       onFormReadyCallback && onFormReadyCallback(formElement);
     }

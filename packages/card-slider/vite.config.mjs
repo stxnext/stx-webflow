@@ -7,12 +7,10 @@ export default defineConfig({
   server: { port: 3001 },
   plugins: [svgr(), cssInjectedByJsPlugin()],
   build: {
-    target: 'es2022',
-    minify: false,
     lib: {
       entry: resolve(__dirname, 'src/main.ts'),
-      name: 'estimate-form',
-      fileName: 'estimate-form',
+      name: 'card-slider',
+      fileName: 'card-slider',
     },
     rollupOptions: {
       output: {

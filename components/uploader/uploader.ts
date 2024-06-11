@@ -35,6 +35,10 @@ export default class Uploader extends HTMLElement {
   }
 
   connectedCallback () {
+    setTimeout(this.#render.bind(this), 100);
+  }
+
+  #render() {
     this.setAttribute('tabindex', '0');
 
     this.#dropBox = build('div', { class: 'drop-box' }, this);

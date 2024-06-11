@@ -11,14 +11,19 @@ export default defineConfig({
     minify: false,
     lib: {
       entry: resolve(__dirname, 'src/main.ts'),
-      name: 'estimate-form',
-      fileName: 'estimate-form',
+      name: 'table-of-content',
+      fileName: 'table-of-content',
     },
     rollupOptions: {
       output: {
         dir: resolve(__dirname, '../../dist'),
         format: 'cjs',
       },
+    },
+  },
+  resolve: {
+    alias: {
+      '@styles': resolve(__dirname, '../../styles'),
     },
   },
 });

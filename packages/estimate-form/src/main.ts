@@ -8,7 +8,7 @@ const addSlider = function () {
   const sliderField = document.getElementsByClassName(
     'hs_my_budget_is_100_000_or_more',
   )[0];
-  const sliderInput = sliderField?.getElementsByClassName('input')[0];
+  const sliderInput = sliderField?.getElementsByClassName('input')?.[0]?.firstChild;
 
   const slider = new Slider({
     min: 50,
