@@ -1,0 +1,574 @@
+@import url("https://fonts.googleapis.com/css?family=Inter|Montserrat&display=swap");
+
+html {
+  font-family: "Inter", lato;
+  background-color: #000;
+}
+
+body {
+  background-color: white;
+  font-family: "Inter", lato;
+}
+
+body * {
+  font-family: "Inter";
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.job-post .job-post__main .main__article .article__content img {
+  width: 68px;
+  height: 68px;
+  min-height: initial !important;
+}
+
+.job-post .job-post__main .main__article .article__content p.perk_text_new {
+  font-size: 0.875em;
+}
+
+.job-post__main .job-post-title {
+  font-size: 2.25em;
+  font-family: "Montserrat";
+  margin-bottom: 24px;
+}
+
+.job-post__main .job-post-subtitle *,
+.job-post__main .job-post-title * {
+  font-family: "Montserrat";
+}
+
+.job-post__main .job-post-subtitle {
+  font-size: 1.75em;
+  font-family: "Montserrat";
+}
+
+.job-post .job-post__main .main__article p:last-child {
+  margin-bottom: 0;
+}
+
+h1 {
+  text-align: center;
+}
+
+p {
+  font-size: 1.25em;
+}
+
+.Benefits_grid {
+  display: -ms-grid;
+  display: grid;
+  gap: 1.3em;
+  padding: 30px 10px 30px;
+  margin-bottom: 80px;
+}
+
+.Salary_grid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  border: 1px solid #e6e6e6;
+}
+
+.Salary_grid > div {
+  background: #000;
+  color: #fff;
+  padding: 2.5em;
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.Salary_grid > div img {
+  margin-bottom: 1.5em;
+}
+
+.Salary_grid > div:first-child {
+  border-right: 1px solid #e6e6e6;
+}
+
+.Salary_grid__title {
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 1.25em;
+  margin-bottom: 1.5em;
+  line-height: 1.75em;
+}
+
+.Salary_grid__text {
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 1em;
+  line-height: 1.5em;
+}
+
+.article_flow {
+  overflow: hidden;
+}
+
+.Benefit_perk {
+  display: -webkit-box;
+  /* display: -ms-flexbox;
+    display: flex; */
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  /* border: rgb(138, 138, 138);
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 15px; */
+}
+
+.Benefit_perk:hover {
+  /* background-color: white; */
+  overflow: visible;
+}
+
+.Benefit_perk:hover + .perk_text {
+  /* + > */
+  position: absolute;
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: 0.15s ease-in-out;
+  -o-transition: 0.15s ease-in-out;
+  transition: 0.15s ease-in-out;
+  overflow: visible;
+  height: 11vh;
+  z-index: 100;
+  /* display: block; */
+  margin-top: -20px;
+}
+
+/* .Benefit_perk:hover .Benefit_perk:hover:before  {
+    opacity: 1;
+    visibility: visible;
+} */
+.perk_figure {
+  /* width: 75px; */
+  /* margin: 0; */
+  margin-right: 20px;
+  margin-left: 0px;
+}
+
+.perk_title {
+  font-size: 1em;
+  line-height: 1.5em;
+  font-weight: 400;
+  width: 95%;
+  margin: 1.5em 0;
+}
+
+.perk_text {
+  font-size: 14px;
+  opacity: 0;
+  /* display: none; */
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-left: 10px;
+  padding-right: 10px;
+  /* padding-top: 10px; */
+  height: 0px;
+  line-height: 1.5em;
+  background-color: white;
+  -webkit-box-shadow: 0 15px 40px 0 rgb(0 0 0 / 6%);
+  box-shadow: 0 15px 40px 0 rgb(0 0 0 / 6%);
+  z-index: 100;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.perk_text:hover {
+  position: absolute;
+  opacity: 1;
+  overflow: visible;
+  height: 11vh;
+  background-color: white;
+  z-index: 100;
+  margin-top: -20px;
+}
+
+.job-post
+  .job-post__aside
+  .aside__content
+  .content__box
+  .box__share-buttons
+  .buttons__button:not(:last-child) {
+  margin-right: 1em;
+  width: 3.125em;
+  height: 3.125em;
+}
+
+#job .job_salary_range {
+  font-size: 12px;
+  letter-spacing: 2px;
+}
+
+.skills {
+  padding: 170px 0 30px;
+}
+
+.skills_text {
+  font-weight: 400;
+  font-size: 14px;
+  margin-left: 10px;
+  line-height: 1.67;
+}
+
+.skills ul {
+  max-width: 680px;
+  padding-left: 25px;
+  list-style: none;
+}
+
+.skills li {
+  position: relative;
+  font-size: 14px;
+  line-height: 1.71;
+  margin: 10px 10px;
+}
+
+.skills li:before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  background-color: #1ebec0;
+  border-radius: 50%;
+  left: -25px;
+  top: 10px;
+}
+
+.job-post .job-post__main .main__article .article__content ul {
+  -webkit-padding-start: 1em;
+  padding-inline-start: 1em;
+  padding-left: 2em;
+}
+
+.job-post .job-post__main .main__article .article__content li::marker {
+  color: #1ebec0;
+}
+
+.job-post .job-post__main .main__article .article__content li {
+  margin: 10px 0;
+  padding-left: 1em;
+  position: relative;
+  font-size: 1em;
+}
+
+.job-post .job-post__main .main__article .article__content p {
+  line-height: 2;
+  font-size: 1em;
+  line-height: 1.5em;
+}
+
+.job-post
+  .job-post__header
+  .header__info
+  .info__advert-data
+  .advert-data__details
+  .details__element
+  svg {
+  color: #33cac0;
+}
+
+.job-post {
+  color: #000;
+  width: 100%;
+}
+
+.job-post .button--cta {
+  background: #33cac0;
+  font-weight: 600;
+  transition: 0.2s all ease;
+}
+
+.job-post .button--cta:hover {
+  background: #000;
+}
+
+.job-post__header {
+  background: #e6e6e6;
+}
+.wcag-desktop {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  width: calc(870px + 17.75rem - 80px);
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.wcag-desktop__button {
+  color: #fff;
+}
+
+.wcag-desktop__button:not(:last-child) {
+  margin-right: 1.5rem;
+  font-weight: 600;
+  -webkit-transition: 0.2s all ease;
+  -o-transition: 0.2s all ease;
+  transition: 0.2s all ease;
+}
+
+.wcag-desktop__button:hover {
+  color: #33cac0;
+  border-color: #33cac0;
+}
+
+.job-post
+  .job-post__header
+  .header__info
+  .info__advert-data
+  .advert-data__name {
+  font-family: "Montserrat";
+  text-align: left;
+  font-size: 1.75em;
+  line-height: 100%;
+}
+
+.job-post
+  .job-post__header
+  .header__info
+  .info__company-logo
+  .company-logo__image {
+  background-color: transparent;
+}
+.job-post
+  .job-post__header
+  .header__info
+  .info__advert-data
+  .advert-data__details
+  .details__element
+  svg {
+  color: #33cac0;
+}
+.job-post__mobile-buttons,
+.job-post .job-post__header .header__info {
+  position: relative;
+  z-index: 1;
+}
+.job-post .job-post__header .header__info {
+  font-size: 1em;
+  line-height: 1.25em;
+}
+.job-post
+  .job-post__header
+  .header__info
+  .info__company-logo
+  .company-logo__image {
+  background-color: transparent;
+}
+.job-post .job-post__header .header__info .info__company-logo {
+  background: #000;
+}
+
+.job-post .job-post__aside .aside__content .content__box {
+  box-shadow: none;
+}
+
+.job-post .job-post__aside .aside__content .content__box .box__info {
+  padding: 0.7em 0.7em;
+  border-right: 1px solid #e6e6e6;
+  border-left: 1px solid #e6e6e6;
+}
+
+.job-post .job-post__aside .aside__content .content__box .box__share-buttons {
+  padding: 0.7em;
+  border-right: 1px solid #e6e6e6;
+  border-left: 1px solid #e6e6e6;
+  border-bottom: 1px solid #e6e6e6;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+}
+
+.job-post .job-post__aside .aside__content {
+  color: #000;
+}
+
+.job-post .button--bordered {
+  color: #000;
+  transition: 0.3s all ease;
+}
+
+.job-post .job-post__main .main__article {
+  background: none;
+  color: #000;
+}
+.job-post .job-post__header .header__image {
+  position: relative;
+}
+.job-post .job-post__header .header__image::before {
+  pointer-events: none;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  content: "";
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(transparent),
+    to(#000)
+  );
+  background: -o-linear-gradient(transparent, #000);
+  background: linear-gradient(transparent, #000);
+  z-index: 1;
+}
+
+.footer {
+  padding-bottom: 70px;
+  margin-bottom: 0;
+}
+
+.job-post .job-post__main .main__article .article__content li::marker {
+  color: #000;
+}
+.job-post .job-post__main .main__article .article__content li {
+  padding-left: 0;
+  margin: 0;
+  font-size: 1em;
+}
+.job-post .p-rich_text_section {
+  margin-bottom: 20px;
+  font-size: 1.25em;
+}
+
+.job-post .job-post__main .main__article .article__title {
+  font-family: "Montserrat";
+  font-size: 1.75em;
+}
+.job-post .job-post__main {
+  max-width: 870px;
+  margin-left: auto;
+}
+.header__info {
+  max-width: calc(870px + 17.75rem + 80px);
+  /* max-width: calc(870px + 17.75rem ); */
+  margin: 0 auto;
+}
+.job-post .job-post__aside {
+  margin-right: auto;
+  width: calc(17.75em + 80px);
+}
+.job-post__mobile-menu,
+.wcag-hc-mobile,
+.wcag-font-mobile {
+  z-index: 2;
+}
+.job-post .button--bordered:hover {
+  color: #33cac0;
+}
+
+.hc-mode body,
+.hc-mode .job-post__header {
+  background: #000;
+}
+
+.hc-mode .job-post .button--bordered {
+  color: #ff0;
+}
+.hc-mode .job-post .job-post__main .main__article .article__content li::marker {
+  color: #ff0;
+}
+
+.hc-mode .job-post .Salary_grid {
+  border: 1px solid #ff0;
+}
+
+.hc-mode .Salary_grid > div:first-child {
+  border-color: #ff0;
+}
+
+.hc-mode .job-post .job-post__aside .aside__content {
+  color: #ff0;
+}
+
+.hc-mode .job-post .button--cta {
+  background-color: #ff0;
+}
+@media (max-width: 800px) {
+  .Salary_grid > div {
+    width: 100%;
+  }
+
+  .Salary_grid > div:first-child {
+    border-right: 0;
+    border-bottom: 1px solid #e6e6e6;
+  }
+}
+
+@media (min-width: 480px) {
+  .Benefits_grid {
+    -ms-grid-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+  }
+  .Benefit_perk:hover + .perk_text,
+  .perk_text:hover,
+  .perk_text {
+    width: 45%;
+    -webkit-box-shadow: 0 15px 40px 0 rgb(0 0 0 / 6%);
+    box-shadow: 0 15px 40px 0 rgb(0 0 0 / 6%);
+  }
+}
+@media (min-width: 1250px) {
+  .Benefits_grid {
+    -ms-grid-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .Benefit_perk:hover + .perk_text,
+  .perk_text:hover,
+  .perk_text {
+    width: 30%;
+    -webkit-box-shadow: 0 15px 40px 0 rgb(0 0 0 / 6%);
+    box-shadow: 0 15px 40px 0 rgb(0 0 0 / 6%);
+  }
+
+  .job-post--wcag {
+    margin: 75px auto 15px;
+  }
+}
+
+@media screen and (max-width: 1250px) {
+  .job-post .job-post__main {
+    width: calc(100% - 17.75em - 80px);
+  }
+  .wcag-desktop {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 840px) {
+  .job-post .job-post__main {
+    width: 100%;
+  }
+
+  .job-post
+    .job-post__header
+    .header__info
+    .info__advert-data
+    .advert-data__name {
+    text-align: center;
+  }
+}
