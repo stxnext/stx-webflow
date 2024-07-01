@@ -472,10 +472,7 @@ function init() {
   
       TRAFFIT_JOB_CATEGORY.forEach((option) => {
         jobCategoryField.add(new Option(option, option));
-      });
-  
-      console.log(geoField, jobCategoryField);
-      console.log(CUSTOM_DATA);
+      });  
     };
   
     sendFiltersRequest();
