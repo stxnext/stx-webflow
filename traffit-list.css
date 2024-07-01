@@ -1,0 +1,317 @@
+/* You can add global styles to this file, and also import other style files */
+@import url("https://fonts.googleapis.com/css?family=Inter|Montserrat&display=swap");
+
+div#traffit-an-filters-xtxrxaxfxixtx2x0x1x6x *:not(.material-icons),
+div#traffit-an-list-xtxrxaxfxixtx2x0x1x6x *:not(.material-icons) {
+  font-family: "Inter";
+}
+
+#traffit-an-list-xtxrxaxfxixtx2x0x1x6x,
+#traffit-an-filters-xtxrxaxfxixtx2x0x1x6x {
+  background: #f6f6f6;
+  font-family: "Inter";
+}
+
+#traffit-an-list-xtxrxaxfxixtx2x0x1x6x #xtxrxaxfxixtx2x0x1x6x-list-div {
+  margin-top: 0;
+  max-width: 996px;
+  gap: 32px;
+}
+
+#traffit-an-list-xtxrxaxfxixtx2x0x1x6x
+  .traffit-an-list-xtxrxaxfxixtx2x0x1x6x-list-element {
+  height: initial;
+  min-height: 124px;
+  padding: 10px 32px;
+  border-radius: 4px;
+  background: #fff;
+  transition: 0.15s background ease-out;
+  box-shadow: none;
+}
+
+.traffit-xx-select select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  text-indent: 1px;
+  text-overflow: "";
+}
+
+.traffit-xx-select .select2-container {
+  width: 100% !important;
+}
+
+div.traffit-xx-select .select2-selection {
+  height: 50px;
+  display: flex;
+  align-items: center;
+}
+
+div.traffit-xx-select .select2-selection__arrow {
+  display: none;
+}
+
+.select2-container .select2-results__option {
+  background: #fff;
+  color: #000 !important; 
+  font-size: 16px;
+  font-weight: 600;
+}
+
+#traffit-an-list-xtxrxaxfxixtx2x0x1x6x
+  .traffit-an-list-xtxrxaxfxixtx2x0x1x6x-list-element:hover {
+  background: rgba(0, 0, 0, 0.05);
+  filter: none;
+}
+
+div.traffit-an-list-xtxrxaxfxixtx2x0x1x6x-list-element .info .title {
+  margin-bottom: 0;
+}
+
+#traffit-an-list-xtxrxaxfxixtx2x0x1x6x
+  .traffit-an-list-xtxrxaxfxixtx2x0x1x6x-list-element
+  .info {
+  display: flex;
+  flex-direction: row;
+  width: calc(100% - 184px);
+  padding-right: 20px;
+  font-weight: 600;
+}
+
+#traffit-an-list-xtxrxaxfxixtx2x0x1x6x
+  .traffit-an-list-xtxrxaxfxixtx2x0x1x6x-list-element
+  .info
+  .title {
+  color: #000;
+  font-size: 20px;
+}
+
+#traffit-an-list-xtxrxaxfxixtx2x0x1x6x .traffit-xx-info-box {
+  color: #000;
+}
+
+#traffit-an-list-xtxrxaxfxixtx2x0x1x6x
+  .traffit-an-list-xtxrxaxfxixtx2x0x1x6x-list-element
+  .info
+  .details {
+  color: #000;
+  font-size: 16px;
+}
+
+#traffit-an-list-xtxrxaxfxixtx2x0x1x6x
+  .traffit-an-list-xtxrxaxfxixtx2x0x1x6x-list-element
+  .info
+  .details
+  > div
+  .material-icons {
+  color: #33cac0;
+}
+
+#traffit-an-list-xtxrxaxfxixtx2x0x1x6x .btn-container__button--text-only {
+  background: #000000;
+  color: white;
+  text-transform: capitalize;
+  height: 44px;
+  min-width: 184px;
+  padding: 0 10px;
+  border-radius: 4px;
+  transition: 0.15s all ease;
+}
+
+#traffit-an-list-xtxrxaxfxixtx2x0x1x6x .btn-container__button--text-only:hover {
+  background: #33cac0;
+}
+
+#traffit-an-list-xtxrxaxfxixtx2x0x1x6x
+  .btn-container__button--text-only
+  .material-icons {
+  display: none;
+}
+
+#traffit-an-list-xtxrxaxfxixtx2x0x1x6x .traffit-xx-info-box {
+  margin-top: 0;
+  border-radius: 4px;
+  box-shadow: none;
+}
+
+#traffit-an-list-xtxrxaxfxixtx2x0x1x6x .traffit-xx-input,
+#traffit-an-filters-xtxrxaxfxixtx2x0x1x6x .traffit-xx-input {
+  border: 1px solid #dadada;
+  box-shadow: none;
+  height: 52px;
+  border-radius: 4px;
+  font-size: 16px;
+  padding: 4px 25px;
+}
+
+div#traffit-an-filters-xtxrxaxfxixtx2x0x1x6x {
+  display: flex;
+  flex-direction: column-reverse;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+div#traffit-an-list-xtxrxaxfxixtx2x0x1x6x {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.traffit-xx-filters-container {
+  align-items: flex-end;
+}
+
+.traffit-xx-select {
+  width: calc(50% - 183px / 2);
+  padding-right: 24px;
+}
+
+.traffit-xx-select-title {
+  color: #000;
+  font-weight: 500;
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+div#traffit-an-filters-xtxrxaxfxixtx2x0x1x6x .traffit-xx-pagination-bottom {
+  display: flex;
+  flex-direction: row-reverse;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+#traffit-an-filters-xtxrxaxfxixtx2x0x1x6x .traffit-xx-pagination-bottom > div {
+  display: flex;
+  justify-content: flex-end;
+}
+
+#traffit-an-filters-xtxrxaxfxixtx2x0x1x6x
+  .traffit-xx-pagination-bottom
+  .traffit-xx-filter-title {
+  justify-content: flex-start;
+  font-family: "Montserrat";
+  font-size: 28px;
+  color: #000;
+  font-weight: 600;
+}
+
+#traffit-pagin-xxx-counter {
+  display: none;
+}
+
+div#traffit-an-filters-xtxrxaxfxixtx2x0x1x6x .traffit-xx-filter-clear {
+  font-size: 14px;
+  background-color: transparent;
+  padding: 2px 8px;
+  color: #000;
+  display: flex;
+  align-items: center;
+}
+
+div#traffit-an-filters-xtxrxaxfxixtx2x0x1x6x .traffit-xx-filter-clear::after {
+  content: "\00D7";
+  display: inline-block;
+  margin-left: 10px;
+  font-size: 20px;
+}
+
+div#traffit-an-filters-xtxrxaxfxixtx2x0x1x6x button#traff-xx-search-button {
+  background: #33cac0;
+  height: 52px;
+  min-width: 183px;
+  padding: 4px 10px;
+  font-size: 16px;
+  transition: 0.2s all ease;
+}
+
+div#traffit-an-filters-xtxrxaxfxixtx2x0x1x6x
+  button#traff-xx-search-button:active,
+div#traffit-an-filters-xtxrxaxfxixtx2x0x1x6x
+  button#traff-xx-search-button:hover {
+  filter: none;
+  background: #000;
+}
+
+#traffit-an-filters-xtxrxaxfxixtx2x0x1x6x .traffit-xx-input {
+  /* max-width: calc(50% - 183px / 2); */
+  width: 100%;
+}
+div#xtxrxaxfxixtx2x0x1x6x-pagination-div {
+  margin-top: 60px;
+}
+div#traffit-an-list-xtxrxaxfxixtx2x0x1x6x
+  #xtxrxaxfxixtx2x0x1x6x-pagination-div
+  > div:not(.xxxseparatorxxxtraffit) {
+  width: 50px;
+  height: 50px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  border: none;
+}
+div#traffit-an-list-xtxrxaxfxixtx2x0x1x6x
+  #xtxrxaxfxixtx2x0x1x6x-pagination-div
+  > div.xxxactivexxxtraffit {
+  color: #fff;
+  background: #000;
+}
+
+@media (max-width: 800px) {
+  .traffit-xx-select {
+    padding-right: 0;
+  }
+
+  div.traffit-an-list-xtxrxaxfxixtx2x0x1x6x-list-element .info .title {
+    margin-bottom: 8px;
+  }
+
+  #traffit-an-list-xtxrxaxfxixtx2x0x1x6x
+    .traffit-an-list-xtxrxaxfxixtx2x0x1x6x-list-element
+    .info {
+    flex-direction: column;
+    width: 100%;
+    padding-right: 0;
+  }
+  #traffit-an-filters-xtxrxaxfxixtx2x0x1x6x .traffit-xx-input {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  div#traffit-an-filters-xtxrxaxfxixtx2x0x1x6x .traffit-xx-pagination-bottom {
+    margin-bottom: 0;
+  }
+
+  div#traffit-an-list-xtxrxaxfxixtx2x0x1x6x {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .traffit-an-list-xtxrxaxfxixtx2x0x1x6x-list-element .info .details {
+    flex-wrap: wrap;
+  }
+
+  #traffit-xx-pagination-bottom {
+    margin-bottom: 20px;
+  }
+
+  #traffit-an-filters-xtxrxaxfxixtx2x0x1x6x > div > * {
+    margin-bottom: 0;
+  }
+}
+
+@media (max-width: 640px) {
+  #traffit-an-list-xtxrxaxfxixtx2x0x1x6x
+    .traffit-an-list-xtxrxaxfxixtx2x0x1x6x-list-element {
+    padding: 10px 12px;
+  }
+  #traffit-an-list-xtxrxaxfxixtx2x0x1x6x
+    .traffit-an-list-xtxrxaxfxixtx2x0x1x6x-list-element {
+    flex-direction: column;
+  }
+}
+.heading-1 {
+  text-align: left !important;
+}
+
+.grey-bar-back-text {
+  font-size: 14px !important;
+}
