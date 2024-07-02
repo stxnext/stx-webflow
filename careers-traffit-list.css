@@ -315,3 +315,6 @@ div#traffit-an-list-xtxrxaxfxixtx2x0x1x6x
 .grey-bar-back-text {
   font-size: 14px !important;
 }
+.traffit-an-list-xtxrxaxfxixtx2x0x1x6x-list-element .info .title {
+    white-space: wrap !important;
+} 
