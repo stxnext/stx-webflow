@@ -1,15 +1,15 @@
 /* You can add global styles to this file, and also import other style files */
-@import url("https://fonts.googleapis.com/css?family=Inter|Montserrat&display=swap");
+@import url('https://fonts.googleapis.com/css?family=Inter|Montserrat&display=swap');
 
 div#traffit-an-filters-xtxrxaxfxixtx2x0x1x6x *:not(.material-icons),
 div#traffit-an-list-xtxrxaxfxixtx2x0x1x6x *:not(.material-icons) {
-  font-family: "Inter";
+  font-family: 'Inter';
 }
 
 #traffit-an-list-xtxrxaxfxixtx2x0x1x6x,
 #traffit-an-filters-xtxrxaxfxixtx2x0x1x6x {
   background: #f6f6f6;
-  font-family: "Inter";
+  font-family: 'Inter';
 }
 
 #traffit-an-list-xtxrxaxfxixtx2x0x1x6x #xtxrxaxfxixtx2x0x1x6x-list-div {
@@ -18,8 +18,7 @@ div#traffit-an-list-xtxrxaxfxixtx2x0x1x6x *:not(.material-icons) {
   gap: 32px;
 }
 
-#traffit-an-list-xtxrxaxfxixtx2x0x1x6x
-  .traffit-an-list-xtxrxaxfxixtx2x0x1x6x-list-element {
+#traffit-an-list-xtxrxaxfxixtx2x0x1x6x .traffit-an-list-xtxrxaxfxixtx2x0x1x6x-list-element {
   height: initial;
   min-height: 124px;
   padding: 10px 32px;
@@ -33,7 +32,7 @@ div#traffit-an-list-xtxrxaxfxixtx2x0x1x6x *:not(.material-icons) {
   -webkit-appearance: none;
   -moz-appearance: none;
   text-indent: 1px;
-  text-overflow: "";
+  text-overflow: '';
 }
 
 .traffit-xx-select .select2-container {
@@ -52,13 +51,12 @@ div.traffit-xx-select .select2-selection__arrow {
 
 .select2-container .select2-results__option {
   background: #fff;
-  color: #000 !important; 
+  color: #000 !important;
   font-size: 16px;
   font-weight: 600;
 }
 
-#traffit-an-list-xtxrxaxfxixtx2x0x1x6x
-  .traffit-an-list-xtxrxaxfxixtx2x0x1x6x-list-element:hover {
+#traffit-an-list-xtxrxaxfxixtx2x0x1x6x .traffit-an-list-xtxrxaxfxixtx2x0x1x6x-list-element:hover {
   background: rgba(0, 0, 0, 0.05);
   filter: none;
 }
@@ -67,9 +65,7 @@ div.traffit-an-list-xtxrxaxfxixtx2x0x1x6x-list-element .info .title {
   margin-bottom: 0;
 }
 
-#traffit-an-list-xtxrxaxfxixtx2x0x1x6x
-  .traffit-an-list-xtxrxaxfxixtx2x0x1x6x-list-element
-  .info {
+#traffit-an-list-xtxrxaxfxixtx2x0x1x6x .traffit-an-list-xtxrxaxfxixtx2x0x1x6x-list-element .info {
   display: flex;
   flex-direction: row;
   width: calc(100% - 184px);
@@ -121,9 +117,7 @@ div.traffit-an-list-xtxrxaxfxixtx2x0x1x6x-list-element .info .title {
   background: #33cac0;
 }
 
-#traffit-an-list-xtxrxaxfxixtx2x0x1x6x
-  .btn-container__button--text-only
-  .material-icons {
+#traffit-an-list-xtxrxaxfxixtx2x0x1x6x .btn-container__button--text-only .material-icons {
   display: none;
 }
 
@@ -183,11 +177,9 @@ div#traffit-an-filters-xtxrxaxfxixtx2x0x1x6x .traffit-xx-pagination-bottom {
   justify-content: flex-end;
 }
 
-#traffit-an-filters-xtxrxaxfxixtx2x0x1x6x
-  .traffit-xx-pagination-bottom
-  .traffit-xx-filter-title {
+#traffit-an-filters-xtxrxaxfxixtx2x0x1x6x .traffit-xx-pagination-bottom .traffit-xx-filter-title {
   justify-content: flex-start;
-  font-family: "Montserrat";
+  font-family: 'Montserrat';
   font-size: 28px;
   color: #000;
   font-weight: 600;
@@ -207,7 +199,7 @@ div#traffit-an-filters-xtxrxaxfxixtx2x0x1x6x .traffit-xx-filter-clear {
 }
 
 div#traffit-an-filters-xtxrxaxfxixtx2x0x1x6x .traffit-xx-filter-clear::after {
-  content: "\00D7";
+  content: '\00D7';
   display: inline-block;
   margin-left: 10px;
   font-size: 20px;
@@ -222,10 +214,8 @@ div#traffit-an-filters-xtxrxaxfxixtx2x0x1x6x button#traff-xx-search-button {
   transition: 0.2s all ease;
 }
 
-div#traffit-an-filters-xtxrxaxfxixtx2x0x1x6x
-  button#traff-xx-search-button:active,
-div#traffit-an-filters-xtxrxaxfxixtx2x0x1x6x
-  button#traff-xx-search-button:hover {
+div#traffit-an-filters-xtxrxaxfxixtx2x0x1x6x button#traff-xx-search-button:active,
+div#traffit-an-filters-xtxrxaxfxixtx2x0x1x6x button#traff-xx-search-button:hover {
   filter: none;
   background: #000;
 }
@@ -264,9 +254,7 @@ div#traffit-an-list-xtxrxaxfxixtx2x0x1x6x
     margin-bottom: 8px;
   }
 
-  #traffit-an-list-xtxrxaxfxixtx2x0x1x6x
-    .traffit-an-list-xtxrxaxfxixtx2x0x1x6x-list-element
-    .info {
+  #traffit-an-list-xtxrxaxfxixtx2x0x1x6x .traffit-an-list-xtxrxaxfxixtx2x0x1x6x-list-element .info {
     flex-direction: column;
     width: 100%;
     padding-right: 0;
@@ -299,15 +287,14 @@ div#traffit-an-list-xtxrxaxfxixtx2x0x1x6x
 }
 
 @media (max-width: 640px) {
-  #traffit-an-list-xtxrxaxfxixtx2x0x1x6x
-    .traffit-an-list-xtxrxaxfxixtx2x0x1x6x-list-element {
+  #traffit-an-list-xtxrxaxfxixtx2x0x1x6x .traffit-an-list-xtxrxaxfxixtx2x0x1x6x-list-element {
     padding: 10px 12px;
   }
-  #traffit-an-list-xtxrxaxfxixtx2x0x1x6x
-    .traffit-an-list-xtxrxaxfxixtx2x0x1x6x-list-element {
+  #traffit-an-list-xtxrxaxfxixtx2x0x1x6x .traffit-an-list-xtxrxaxfxixtx2x0x1x6x-list-element {
     flex-direction: column;
   }
 }
+
 .heading-1 {
   text-align: left !important;
 }
@@ -315,6 +302,24 @@ div#traffit-an-list-xtxrxaxfxixtx2x0x1x6x
 .grey-bar-back-text {
   font-size: 14px !important;
 }
+
 .traffit-an-list-xtxrxaxfxixtx2x0x1x6x-list-element .info .title {
-    white-space: wrap !important;
-} 
+  white-space: wrap !important;
+  font-weight: 600 !important;
+}
+.traffit-xx-select-title {
+  font-family: 'Inter' !important;
+  font-size: 14px !important;
+  font-weight: normal !important;
+  line-height: 24px !important;
+  text-align: left !important;
+  color: #777777 !important;
+}
+
+.traffit-xx-flex-container.traffit-xx-filters-container {
+  width: 100% !important;
+}
+
+#traffit-an-filters-xtxrxaxfxixtx2x0x1x6x {
+  width: 100% !important;
+}
