@@ -293,6 +293,23 @@ div#traffit-an-list-xtxrxaxfxixtx2x0x1x6x
   #traffit-an-list-xtxrxaxfxixtx2x0x1x6x .traffit-an-list-xtxrxaxfxixtx2x0x1x6x-list-element {
     flex-direction: column;
   }
+
+  .traffit-an-list-xtxrxaxfxixtx2x0x1x6x-list-element {
+    padding: 24px 0 !important;
+  }
+  .traffit-an-list-xtxrxaxfxixtx2x0x1x6x-list-element .info {
+    margin-bottom: 10px !important;
+  }
+  .info .title,
+  .info .details {
+    display: flex !important;
+    justify-content: center !important;
+    margin: 12px 0 !important;
+    text-align: center !important;
+  }
+  .traffit-an-list-xtxrxaxfxixtx2x0x1x6x-list-element .btn-container {
+    margin-bottom: 12px !important;
+  }
 }
 
 .heading-1 {
