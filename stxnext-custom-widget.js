@@ -86,6 +86,7 @@ function init() {
       categoryTitle: 'Job Category',
       remoteTitle: 'Remote',
       onSiteTitle: 'On Site',
+      hybridTitle: 'Hybrid',
     },
   };
   // #endregion
@@ -434,9 +435,8 @@ function init() {
 
     const locations = new Set();
     TRAFFIT_DATA.items.forEach((item) => {
-      const country = item['_custom_location.translate'].split(',')[0];
+      const [country, city] = item['_custom_location.translate'].split(', ');
       locations.add(country);
-      locations.add(item['_custom_location.translate']);
     });
     const TRAFFIT_JOB_LOCATION = [...locations];
 
@@ -665,6 +665,14 @@ function init() {
 
         const isRemote = items[i] && items[i].remote === '1';
 
+        const positionType = fillData['_position_type.translate'];
+        const positionTypeToIconMap = {
+          Remote: 'my_location',
+          'On Site': 'push_pin',
+          Hybrid: 'home_work',
+        };
+        const positionTypeIcon = positionTypeToIconMap[positionType] ?? '';
+
         const location = fillData.geolocation || fillData['_custom_location.translate'] || '';
         const geoLocation = isRemote ? location.split(', ')[0] : location;
 
@@ -681,10 +689,10 @@ function init() {
 
         fillData.remoteHTML = `
           <div>
-              <i class='material-icons'>${isRemote ? 'my_location' : 'push_pin'}
+              <i class='material-icons'>${positionTypeIcon}
               </i>
               <span>
-              ${t(isRemote ? 'remoteTitle' : 'onSiteTitle')}
+              ${positionType}
               </span>
           </div>
           `;
@@ -704,7 +712,9 @@ function init() {
         counterSpan.innerText = `${t('advertsFound')}: ${data.count}`;
       }
 
-      createPagination(data.count);
+      const count = !selectedJobCategory && !selectedLocation ? data.count : 0;
+      createPagination(count);
+
       loader.style.display = 'none';
       changeButtonsColor();
     },
