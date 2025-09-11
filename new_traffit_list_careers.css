@@ -73,10 +73,7 @@ div.traffit-an-list-xtxrxaxfxixtx2x0x1x6x-list-element .info .title {
   font-weight: 600;
 }
 
-#traffit-an-list-xtxrxaxfxixtx2x0x1x6x
-  .traffit-an-list-xtxrxaxfxixtx2x0x1x6x-list-element
-  .info
-  .title {
+#traffit-an-list-xtxrxaxfxixtx2x0x1x6x .traffit-an-list-xtxrxaxfxixtx2x0x1x6x-list-element .info .title {
   color: #000;
   font-size: 20px;
 }
@@ -85,20 +82,12 @@ div.traffit-an-list-xtxrxaxfxixtx2x0x1x6x-list-element .info .title {
   color: #000;
 }
 
-#traffit-an-list-xtxrxaxfxixtx2x0x1x6x
-  .traffit-an-list-xtxrxaxfxixtx2x0x1x6x-list-element
-  .info
-  .details {
+#traffit-an-list-xtxrxaxfxixtx2x0x1x6x .traffit-an-list-xtxrxaxfxixtx2x0x1x6x-list-element .info .details {
   color: #000;
   font-size: 16px;
 }
 
-#traffit-an-list-xtxrxaxfxixtx2x0x1x6x
-  .traffit-an-list-xtxrxaxfxixtx2x0x1x6x-list-element
-  .info
-  .details
-  > div
-  .material-icons {
+#traffit-an-list-xtxrxaxfxixtx2x0x1x6x .traffit-an-list-xtxrxaxfxixtx2x0x1x6x-list-element .info .details>div .material-icons {
   color: #33cac0;
 }
 
@@ -142,11 +131,13 @@ div#traffit-an-filters-xtxrxaxfxixtx2x0x1x6x {
   flex-direction: column-reverse;
   padding-top: 20px;
   padding-bottom: 20px;
+  border-radius: 1rem 1rem 0rem 0rem;
 }
 
 div#traffit-an-list-xtxrxaxfxixtx2x0x1x6x {
   padding-top: 40px;
   padding-bottom: 40px;
+  border-radius: 0rem 0rem 1rem 1rem;
 }
 
 .traffit-xx-filters-container {
@@ -172,7 +163,7 @@ div#traffit-an-filters-xtxrxaxfxixtx2x0x1x6x .traffit-xx-pagination-bottom {
   margin-bottom: 20px;
 }
 
-#traffit-an-filters-xtxrxaxfxixtx2x0x1x6x .traffit-xx-pagination-bottom > div {
+#traffit-an-filters-xtxrxaxfxixtx2x0x1x6x .traffit-xx-pagination-bottom>div {
   display: flex;
   justify-content: flex-end;
 }
@@ -224,12 +215,12 @@ div#traffit-an-filters-xtxrxaxfxixtx2x0x1x6x button#traff-xx-search-button:hover
   /* max-width: calc(50% - 183px / 2); */
   width: 100%;
 }
+
 div#xtxrxaxfxixtx2x0x1x6x-pagination-div {
   margin-top: 60px;
 }
-div#traffit-an-list-xtxrxaxfxixtx2x0x1x6x
-  #xtxrxaxfxixtx2x0x1x6x-pagination-div
-  > div:not(.xxxseparatorxxxtraffit) {
+
+div#traffit-an-list-xtxrxaxfxixtx2x0x1x6x #xtxrxaxfxixtx2x0x1x6x-pagination-div>div:not(.xxxseparatorxxxtraffit) {
   width: 50px;
   height: 50px;
   display: inline-flex;
@@ -238,9 +229,8 @@ div#traffit-an-list-xtxrxaxfxixtx2x0x1x6x
   border-radius: 50%;
   border: none;
 }
-div#traffit-an-list-xtxrxaxfxixtx2x0x1x6x
-  #xtxrxaxfxixtx2x0x1x6x-pagination-div
-  > div.xxxactivexxxtraffit {
+
+div#traffit-an-list-xtxrxaxfxixtx2x0x1x6x #xtxrxaxfxixtx2x0x1x6x-pagination-div>div.xxxactivexxxtraffit {
   color: #fff;
   background: #000;
 }
@@ -259,6 +249,7 @@ div#traffit-an-list-xtxrxaxfxixtx2x0x1x6x
     width: 100%;
     padding-right: 0;
   }
+
   #traffit-an-filters-xtxrxaxfxixtx2x0x1x6x .traffit-xx-input {
     max-width: 100%;
     width: 100%;
@@ -281,7 +272,7 @@ div#traffit-an-list-xtxrxaxfxixtx2x0x1x6x
     margin-bottom: 20px;
   }
 
-  #traffit-an-filters-xtxrxaxfxixtx2x0x1x6x > div > * {
+  #traffit-an-filters-xtxrxaxfxixtx2x0x1x6x>div>* {
     margin-bottom: 0;
   }
 }
@@ -290,6 +281,7 @@ div#traffit-an-list-xtxrxaxfxixtx2x0x1x6x
   #traffit-an-list-xtxrxaxfxixtx2x0x1x6x .traffit-an-list-xtxrxaxfxixtx2x0x1x6x-list-element {
     padding: 10px 12px;
   }
+
   #traffit-an-list-xtxrxaxfxixtx2x0x1x6x .traffit-an-list-xtxrxaxfxixtx2x0x1x6x-list-element {
     flex-direction: column;
   }
@@ -297,9 +289,11 @@ div#traffit-an-list-xtxrxaxfxixtx2x0x1x6x
   .traffit-an-list-xtxrxaxfxixtx2x0x1x6x-list-element {
     padding: 24px 0 !important;
   }
+
   .traffit-an-list-xtxrxaxfxixtx2x0x1x6x-list-element .info {
     margin-bottom: 10px !important;
   }
+
   .info .title,
   .info .details {
     display: flex !important;
@@ -307,6 +301,7 @@ div#traffit-an-list-xtxrxaxfxixtx2x0x1x6x
     margin: 12px 0 !important;
     text-align: center !important;
   }
+
   .traffit-an-list-xtxrxaxfxixtx2x0x1x6x-list-element .btn-container {
     margin-bottom: 12px !important;
   }
@@ -325,6 +320,7 @@ div#traffit-an-list-xtxrxaxfxixtx2x0x1x6x
   font-weight: 600 !important;
   line-height: 28px !important;
 }
+
 .traffit-xx-select-title {
   font-family: 'Inter' !important;
   font-size: 14px !important;
