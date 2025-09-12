@@ -309,7 +309,7 @@ function init() {
       </div>`;
 
   var paginationInterior =
-    "<div onclick=\"document.querySelector('.traffit-an-list-xtxrxaxfxixtx2x0x1x6x').scrollIntoView({behavior:'smooth'});xxtraffixxlist.changePage({{page}})\" class='{{class}}'>{{page}}</div>";
+    "<div onclick=\"document.querySelector('#traffit-an-list-xtxrxaxfxixtx2x0x1x6x').scrollIntoView({behavior:'smooth'});xxtraffixxlist.changePage({{page}})\" class='{{class}}'>{{page}}</div>";
   var paginationInteriorSeparator = "<div class='xxxseparatorxxxtraffit'>...</div>";
 
   String.prototype.template = function (data) {
