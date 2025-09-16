@@ -1,5 +1,4 @@
 /* You can add global styles to this file, and also import other style files */
-@import url('https://fonts.googleapis.com/css?family=Inter|Montserrat&display=swap');
 
 div#traffit-an-filters-xtxrxaxfxixtx2x0x1x6x *:not(.material-icons),
 div#traffit-an-list-xtxrxaxfxixtx2x0x1x6x *:not(.material-icons) {
@@ -170,7 +169,7 @@ div#traffit-an-filters-xtxrxaxfxixtx2x0x1x6x .traffit-xx-pagination-bottom {
 
 #traffit-an-filters-xtxrxaxfxixtx2x0x1x6x .traffit-xx-pagination-bottom .traffit-xx-filter-title {
   justify-content: flex-start;
-  font-family: 'Montserrat';
+  font-family: 'Inter';
   font-size: 28px;
   color: #000;
   font-weight: 600;
