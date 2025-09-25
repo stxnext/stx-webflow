@@ -282,14 +282,14 @@ function init() {
     `<div class="traffit-xx-flex-container traffit-xx-filters-container">` +
     `<div class="traffit-xx-select">
               <div class="traffit-xx-select-title">${t('locationTitle')}</div>
-              <select name="geolocation" class="traffit-xx-flex-big traffit-xx-input"/>
+              <select name="geolocation" class="traffit-xx-flex-big traffit-xx-input" data-analytics="select-geolocation" />
                   <option disabled selected value> -- select an option -- </option>
               </select>
   
           </div>` +
     `<div class="traffit-xx-select">
               <div class="traffit-xx-select-title">${t('categoryTitle')}</div>
-              <select name="job-category" class="traffit-xx-flex-big traffit-xx-input"/>
+              <select name="job-category" class="traffit-xx-flex-big traffit-xx-input" data-analytics="select-job-category" />
                 <option disabled selected value> -- select an option -- </option>
               </select>
   
