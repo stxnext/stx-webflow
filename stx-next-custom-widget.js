@@ -282,14 +282,14 @@ function init() {
     `<div class="traffit-xx-flex-container traffit-xx-filters-container">` +
     `<div class="traffit-xx-select">
               <div class="traffit-xx-select-title">${t('locationTitle')}</div>
-              <select name="geolocation" class="traffit-xx-flex-big traffit-xx-input" data-analytics="select-geolocation" />
+              <select name="geolocation" class="traffit-xx-flex-big traffit-xx-input" />
                   <option disabled selected value> -- select an option -- </option>
               </select>
   
           </div>` +
     `<div class="traffit-xx-select">
               <div class="traffit-xx-select-title">${t('categoryTitle')}</div>
-              <select name="job-category" class="traffit-xx-flex-big traffit-xx-input" data-analytics="select-job-category" />
+              <select name="job-category" class="traffit-xx-flex-big traffit-xx-input" />
                 <option disabled selected value> -- select an option -- </option>
               </select>
   
@@ -470,11 +470,15 @@ function init() {
     const jobCategoryField = document.querySelector('select[name="job-category"]');
 
     for (let key in TRAFFIT_JOB_LOCATION) {
-      geoField.add(new Option(TRAFFIT_JOB_LOCATION[key], TRAFFIT_JOB_LOCATION[key]));
+      const option = new Option(TRAFFIT_JOB_LOCATION[key], TRAFFIT_JOB_LOCATION[key]);
+      option.setAttribute('id', `geolocation-${TRAFFIT_JOB_LOCATION[key].toLowerCase()}`);
+      geoField.add(option);
     }
 
     TRAFFIT_JOB_CATEGORY.forEach(({ label, value }) => {
-      jobCategoryField.add(new Option(label, value));
+      const option = new Option(label, value);
+      option.setAttribute('id', `job-category-${value.toLowerCase()}`);
+      jobCategoryField.add(option);
     });
   };
 
